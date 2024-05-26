@@ -1,11 +1,11 @@
 #include <mod/amlmod.h>
-#include "isautils.h"
+#include "notmain/isautils.h"
 #define sizeofA(__aVar)  ((int)(sizeof(__aVar)/sizeof(__aVar[0])))
 
-MYMOD(net.rusjj.widerender, Wide Render, 1.0, RusJJ)
+MYMOD(ThisModBy.KaaKangSatir.widerender, Wide Render, 1.0, KaaKangSatir)
 NEEDGAME(com.rockstargames.gtasa)
 BEGIN_DEPLIST()
-    ADD_DEPENDENCY_VER(net.rusjj.aml, 1.2.1)
+    ADD_DEPENDENCY_VER(Mod.KaaKangSatur.aml, 1.2.1)
 END_DEPLIST()
 
 void *hGTASA;
