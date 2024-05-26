@@ -3,9 +3,8 @@
 #define sizeofA(__aVar)  ((int)(sizeof(__aVar)/sizeof(__aVar[0])))
 
 MYMOD(ThisModBy.KaaKangSatir.widerender, Wide Render, 1.0, KaaKangSatir)
-NEEDGAME(com.rockstargames.gtasa)
 BEGIN_DEPLIST()
-    ADD_DEPENDENCY_VER(Mod.KaaKangSatur.aml, 1.2.1)
+    ADD_DEPENDENCY_VER(Mod.KaaKangSatir.aml, 1.2.1)
 END_DEPLIST()
 
 void *hGTASA;
