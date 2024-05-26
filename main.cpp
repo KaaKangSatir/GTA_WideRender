@@ -76,8 +76,5 @@ extern "C" void OnModLoad()
     aml->MLSGetInt("ASPCTVL", &currentAspect); clampint(0, maxEls, &currentAspect);
     aml->MLSGetInt("ASPCTCR", &bCorrectAspect); clampint(0, 1, &bCorrectAspect);
 
-    sautils->AddClickableItem(eTypeOfSettings::SetType_Display, "Aspect Ratio", currentAspect, 0, maxEls, AspectRatioNames, OnARChange, NULL);
-    sautils->AddClickableItem(eTypeOfSettings::SetType_Display, "Correct Aspect Ratio", bCorrectAspect, 0, 1, yesnoSwitch, OnARCorrectionChange, NULL);
-
     HOOKSYM(CameraSize, hGTASA, "_Z10CameraSizeP8RwCameraP6RwRectff");
 }
