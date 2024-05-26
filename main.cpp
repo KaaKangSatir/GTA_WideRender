@@ -1,5 +1,5 @@
 #include <mod/amlmod.h>
-#include "notmain/isautils.h"
+#include "isautils.h"
 #define sizeofA(__aVar)  ((int)(sizeof(__aVar)/sizeof(__aVar[0])))
 
 MYMOD(ThisModBy.KaaKangSatir.widerender, Wide Render, 1.0, KaaKangSatir)
